@@ -22,7 +22,7 @@ activity <-read.csv("./activity.csv")
 activity$date <- as.Date(activity$date,"%Y-%m-%d")
 ```
 
-**What is mean total number of steps taken per day?**
+##What is mean total number of steps taken per day?##
 
 For this part of the assignment, you can ignore the missing values in the dataset.
 
