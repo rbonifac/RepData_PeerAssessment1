@@ -1,3 +1,0 @@
-https://github.com/rbonifac/RepData_PeerAssessment1
-
-42821299a4672e6204e4093aeb4e66cfba4aa15c
