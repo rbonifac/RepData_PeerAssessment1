@@ -1,9 +1,8 @@
 
 ---
-title: "Reproducible Research - Monitoring Personal Data - Project 1"
-date: "June 29, 2016"
-output: html_document
----
+Reproducible Research - Monitoring Personal Data - Project 1
+==============================================================
+Date: June 29, 2016
 
 
 
