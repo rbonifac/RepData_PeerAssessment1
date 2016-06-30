@@ -1,12 +1,11 @@
 
----
 Reproducible Research - Monitoring Personal Data - Project 1
 ==============================================================
 Date: June 29, 2016
 
 
 
-**Loading and preprocessing the data**
+##Loading and preprocessing the data##
 
 Show any code that is needed to
 
@@ -59,7 +58,7 @@ median(sumSteps$steps,na.rm=TRUE)
 ```
 ## [1] 10395
 ```
-**What is the average daily activity pattern?**
+##What is the average daily activity pattern?##
 
 3.Make a time series plot (i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis)
 
@@ -82,7 +81,7 @@ avgInterval[which.max(avgInterval$steps), ]
 ## 104      835 206.1698
 ```
 
-**Imputing missing values**
+##Imputing missing values##
 
 Note that there are a number of days/intervals where there are missing values (coded as NA). The presence of missing days may introduce bias into some calculations or summaries of the data.
 
@@ -97,7 +96,7 @@ sum(is.na(activity$steps))
 ```
 2.Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.
 
-*-- Assigned the steps mean for that 5-minute interval to NA values.* 
+*Assigned the steps mean for the 5-minute interval to NA values.* 
 
 3.Create a new dataset that is equal to the original dataset but with the missing data filled in.
 
@@ -135,13 +134,15 @@ median(sumSteps2$steps,na.rm=TRUE)
 ## [1] 10766.19
 ```
 Do these values differ from the estimates from the first part of the assignment? 
-*-- Yes. The values do differ after populating new NA values*
+
+*Yes.The values do differ after populating new NA values*
 
 What is the impact of imputing missing data on the estimates of the total daily number of steps?
-*-- It increased the mean and median of the total number of steps*
+
+*It increased the mean and median of the total number of steps*
 
 
-**Are there differences in activity patterns between weekdays and weekends?**
+##Are there differences in activity patterns between weekdays and weekends?##
 
 For this part the weekdays() function may be of some help here. Use the dataset with the filled-in missing values for this part.
 

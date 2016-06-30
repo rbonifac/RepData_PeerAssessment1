@@ -201,13 +201,11 @@ hr {
 </head>
 
 <body>
-<hr/>
-
 <h1>Reproducible Research - Monitoring Personal Data - Project 1</h1>
 
 <p>Date: June 29, 2016</p>
 
-<p><strong>Loading and preprocessing the data</strong></p>
+<p>##Loading and preprocessing the data##</p>
 
 <p>Show any code that is needed to</p>
 
@@ -253,7 +251,7 @@ activity$date &lt;- as.Date(activity$date,&quot;%Y-%m-%d&quot;)
 <pre><code>## [1] 10395
 </code></pre>
 
-<p><strong>What is the average daily activity pattern?</strong></p>
+<p>##What is the average daily activity pattern?##</p>
 
 <p>3.Make a time series plot (i.e. type = &ldquo;l&rdquo;) of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis)</p>
 
@@ -273,7 +271,7 @@ with(avgInterval,plot(interval,steps,type=&quot;l&quot;))
 ## 104      835 206.1698
 </code></pre>
 
-<p><strong>Imputing missing values</strong></p>
+<p>##Imputing missing values##</p>
 
 <p>Note that there are a number of days/intervals where there are missing values (coded as NA). The presence of missing days may introduce bias into some calculations or summaries of the data.</p>
 
@@ -287,7 +285,7 @@ with(avgInterval,plot(interval,steps,type=&quot;l&quot;))
 
 <p>2.Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.</p>
 
-<p><em>&ndash; Assigned the steps mean for that 5-minute interval to NA values.</em> </p>
+<p><em>Assigned the steps mean for the 5-minute interval to NA values.</em> </p>
 
 <p>3.Create a new dataset that is equal to the original dataset but with the missing data filled in.</p>
 
@@ -318,13 +316,15 @@ hist(sumSteps2$steps,breaks=20,main=&quot;&quot;,xlab=&quot;total steps per day&
 <pre><code>## [1] 10766.19
 </code></pre>
 
-<p>Do these values differ from the estimates from the first part of the assignment? 
-<em>&ndash; Yes. The values do differ after populating new NA values</em></p>
+<p>Do these values differ from the estimates from the first part of the assignment? </p>
 
-<p>What is the impact of imputing missing data on the estimates of the total daily number of steps?
-<em>&ndash; It increased the mean and median of the total number of steps</em></p>
+<p><em>Yes.The values do differ after populating new NA values</em></p>
 
-<p><strong>Are there differences in activity patterns between weekdays and weekends?</strong></p>
+<p>What is the impact of imputing missing data on the estimates of the total daily number of steps?</p>
+
+<p><em>It increased the mean and median of the total number of steps</em></p>
+
+<p>##Are there differences in activity patterns between weekdays and weekends?##</p>
 
 <p>For this part the weekdays() function may be of some help here. Use the dataset with the filled-in missing values for this part.</p>
 
